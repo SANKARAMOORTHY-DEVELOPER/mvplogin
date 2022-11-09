@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import  Image from 'next/image';
 import { Link, Spinner } from 'components';
-import { Layout } from 'components/account';
 import { userService } from 'services';
 import KYCLOGO from './kycl.gif';
 export default Kyc;
