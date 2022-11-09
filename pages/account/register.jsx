@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
-
+import { Layout } from 'components/account';
 import { Link } from 'components';
 import { userService, alertService } from 'services';
 
