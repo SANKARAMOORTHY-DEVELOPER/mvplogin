@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CeloPunk auction
+<a href="https://www.buymeacoffee.com/anhfactor" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-## Getting Started
+## Overview
 
-First, run the development server:
+CeloPunk is a NFT marketplace on celo testnet chain (Alfajores). It allows user mint, buying, make an offer, claim funds of NFTs in an automated environment.  
+The demo from challenge Dacade courses "Celo Development 201: [https://dacade.org/communities/celo/courses/celo-201/challenges/df5bfad4-7af3-4fd6-9351-ed6d9f45ac4b] - Dacade 
+- [Demo Website](http://celopunk-auction.vercel.app/). 
 
-```bash
-npm run dev
-# or
-yarn dev
+You can signup here to learn and earn crypto: https://dacade.org/signup?invite=anhfellow
+
+## Technology stack
+
+- `Solidity`
+- `Next.js`
+- `Hardhat`
+- `celodapp kit`
+- `Metamask`
+- `IPFS`
+- `ChakraUI`
+
+## Contracts
+
+- NFTCollection - 0x438cd380130f848E59B163c345d04A67F346649d
+- NFTMarketplace - 0x9632Daa18c167a318D712E95b78E97d81246458a
+
+## Features
+
+1. Mint NFT straight from NFTCollection contract. User must input a name, description and upload a file (image, gif, video) to mint his own NFT 
+2. User can make an offer his NFT by specifying its price. If someone fulfills this offer, then the NFT ownership is transferred to a new owner. 
+3. User can cancel an offer he did in the past if in the end he does not want to sell his NFT or wants to adjust the price.
+4. User can buy those NFT which someone else offered for sale in the marketplace.
+5. If user sold an NFT, he can claim his funds go to "My assets" page and click on tab "collect sale fund".  
+6. NFT can track owner, creator address.  
+
+## Screenshots
+
+- **Home Page**
+  ![Home Page](./public/home-page.png)
+- **Explore NFT**
+  ![Explore Page](./public/explore-page.png)
+- **My assets/Collect sale fund**
+  ![My Assets](./public/profile.png)
+- **Mint NFT**
+  ![Mint NFT](./public/mint-nft.png)
+- **NFT Details**
+  ![NFT Details](./public/nft-details.png)
+  
+## Installing
+ 
+First you need to copy .env.example to .env and fill in your private key.
+
+Run the following command in your terminal after cloning the main repo:
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+yarn
+npx hardhat run scripts/deploy.js --network alfajores
+yarn build
+yarn dev
+yarn start
+```
