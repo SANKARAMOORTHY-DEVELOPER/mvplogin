@@ -1,0 +1,1099 @@
+.animate-on-hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.animate-on-hover:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/**
+Use a better box model (opinionated).
+*/
+
+.use-ck *,
+.use-ck *::before,
+.use-ck *::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+.use-ck {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+.use-ck {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+.use-ck {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+.use-ck {
+  font-family: system-ui, -apple-system,
+    /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+.use-ck hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.use-ck abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+.use-ck b,
+.use-ck strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+.use-ck code,
+.use-ck kbd,
+.use-ck samp,
+.use-ck pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+.use-ck small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+.use-ck sub,
+.use-ck sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.use-ck sub {
+  bottom: -0.25em;
+}
+
+.use-ck sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+.use-ck table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+.use-ck button,
+.use-ck input,
+.use-ck optgroup,
+.use-ck select,
+.use-ck textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+.use-ck button,
+.use-ck select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+.use-ck button,
+.use-ck [type='button'],
+.use-ck [type='reset'],
+.use-ck [type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+.use-ck ::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+.use-ck :-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+.use-ck :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+.use-ck legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.use-ck progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.use-ck ::-webkit-inner-spin-button,
+.use-ck ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+.use-ck [type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+.use-ck ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+.use-ck ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+.use-ck summary {
+  display: list-item;
+}
+
+/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+.use-ck blockquote,
+.use-ck dl,
+.use-ck dd,
+.use-ck h1,
+.use-ck h2,
+.use-ck h3,
+.use-ck h4,
+.use-ck h5,
+.use-ck h6,
+.use-ck hr,
+.use-ck figure,
+.use-ck p,
+.use-ck pre {
+  margin: 0;
+}
+
+.use-ck button {
+  background-color: transparent;
+  background-image: none;
+}
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+
+.use-ck button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.use-ck fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.use-ck ol,
+.use-ck ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+/**
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
+ * 2. Use Tailwind's default "normal" line-height so the user isn't forced
+ *    to override it to ensure consistency even when using the default theme.
+ */
+
+.use-ck {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  /* 1 */
+  line-height: 1.5;
+  /* 2 */
+}
+
+/**
+ * Inherit font-family and line-height from `html` so users can set them as
+ * a class directly on the `html` element.
+ */
+
+/* .use-ck {
+  font-family: inherit;
+  line-height: inherit;
+} */
+
+/**
+ * 1. Prevent padding and border from affecting element width.
+ *
+ *    We used to set this in the html element and inherit from
+ *    the parent element for everything else. This caused issues
+ *    in shadow-dom-enhanced elements like <details> where the content
+ *    is wrapped by a div with box-sizing set to `content-box`.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/4
+ *
+ *
+ * 2. Allow adding a border to an element by just adding a border-width.
+ *
+ *    By default, the way the browser specifies that an element should have no
+ *    border is by setting it's border-style to `none` in the user-agent
+ *    stylesheet.
+ *
+ *    In order to easily add borders to elements by just setting the `border-width`
+ *    property, we change the default border-style for all elements to `solid`, and
+ *    use border-width to hide them instead. This way our `border` utilities only
+ *    need to set the `border-width` property instead of the entire `border`
+ *    shorthand, making our border utilities much more straightforward to compose.
+ *
+ *    https://github.com/tailwindcss/tailwindcss/pull/116
+ */
+
+.use-ck *,
+.use-ck ::before,
+.use-ck ::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+.use-ck hr {
+  border-top-width: 1px;
+}
+
+/**
+ * Undo the `border-style: none` reset that Normalize applies to images so that
+ * our `border-{width}` utilities have the expected effect.
+ *
+ * The Normalize reset is unnecessary for us since we default the border-width
+ * to 0 on all elements.
+ *
+ * https://github.com/tailwindcss/tailwindcss/issues/362
+ */
+
+.use-ck img {
+  border-style: solid;
+}
+
+.use-ck textarea {
+  resize: vertical;
+}
+
+.use-ck input::-moz-placeholder, .use-ck textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+.use-ck input:-ms-input-placeholder, .use-ck textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+.use-ck input::placeholder,
+.use-ck textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+.use-ck button,
+.use-ck [role='button'] {
+  cursor: pointer;
+}
+
+.use-ck table {
+  border-collapse: collapse;
+}
+
+.use-ck h1,
+.use-ck h2,
+.use-ck h3,
+.use-ck h4,
+.use-ck h5,
+.use-ck h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**
+ * Reset links to optimize for opt-in styling instead of
+ * opt-out.
+ */
+
+.use-ck a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/**
+ * Reset form element properties that are easy to forget to
+ * style explicitly so you don't inadvertently introduce
+ * styles that deviate from your design system. These styles
+ * supplement a partial reset that is already applied by
+ * normalize.css.
+ */
+
+.use-ck button,
+.use-ck input,
+.use-ck optgroup,
+.use-ck select,
+.use-ck textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/**
+ * Use the configured 'mono' font family for elements that
+ * are expected to be rendered with a monospace font, falling
+ * back to the system monospace stack if there is no configured
+ * 'mono' font family.
+ */
+
+.use-ck pre,
+.use-ck code,
+.use-ck kbd,
+.use-ck samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
+/**
+ * Make replaced elements `display: block` by default as that's
+ * the behavior you want almost all of the time. Inspired by
+ * CSS Remedy, with `svg` added as well.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+.use-ck img,
+.use-ck svg,
+.use-ck video,
+.use-ck canvas,
+.use-ck audio,
+.use-ck iframe,
+.use-ck embed,
+.use-ck object {
+  display: block;
+  vertical-align: middle;
+}
+
+/**
+ * Constrain images and videos to the parent width and preserve
+ * their instrinsic aspect ratio.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+.use-ck img,
+.use-ck video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+Scrollbar overrides
+===================
+*/
+
+.use-ck {
+  --scrollbarBG: rgba(255, 255, 255, 0);
+  --thumbBG: #dddddd;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.use-ck ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: var(--scrollbarBG);
+}
+
+.use-ck ::-webkit-scrollbar-track {
+  background-color: var(--scrollbarBG);
+}
+
+.use-ck ::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+/* phones */
+
+@media only screen and (max-width: 767px) {
+  .use-ck ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+/*
+Number Input spinner overrides
+===============================
+*/
+
+/* Chrome, Safari, Edge, Opera */
+
+.use-ck input::-webkit-outer-spin-button,
+.use-ck input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+.use-ck input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/*
+Connect Modal
+===========
+*/
+
+.use-ck-connect-container {
+  max-width: calc(min(90vw, 28rem));
+  max-height: calc(min(80vh, 35rem));
+  overflow: auto;
+}
+
+.tw-fixed {
+  position: fixed !important;
+}
+
+.tw-absolute {
+  position: absolute !important;
+}
+
+.tw-relative {
+  position: relative !important;
+}
+
+.tw-inset-0 {
+  top: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+}
+
+.tw-top-3 {
+  top: 0.75rem !important;
+}
+
+.tw-right-2 {
+  right: 0.5rem !important;
+}
+
+.tw-my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.tw-my-8 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.tw-mr-4 {
+  margin-right: 1rem !important;
+}
+
+.tw-mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.tw-mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.tw-mt-4 {
+  margin-top: 1rem !important;
+}
+
+.tw-mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.tw-mt-6 {
+  margin-top: 1.5rem !important;
+}
+
+.tw-mr-9 {
+  margin-right: 2.25rem !important;
+}
+
+.tw-mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.tw-mt-3 {
+  margin-top: 0.75rem !important;
+}
+
+.tw-ml-1 {
+  margin-left: 0.25rem !important;
+}
+
+.tw-mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.tw-flex {
+  display: flex !important;
+}
+
+.tw-h-4 {
+  height: 1rem !important;
+}
+
+.tw-h-5 {
+  height: 1.25rem !important;
+}
+
+.tw-max-h-screen {
+  max-height: 100vh !important;
+}
+
+.tw-w-80 {
+  width: 20rem !important;
+}
+
+.tw-w-4 {
+  width: 1rem !important;
+}
+
+.tw-w-32 {
+  width: 8rem !important;
+}
+
+.tw-w-5 {
+  width: 1.25rem !important;
+}
+
+.tw-w-64 {
+  width: 16rem !important;
+}
+
+.tw-flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+.tw-list-inside {
+  list-style-position: inside !important;
+}
+
+.tw-list-disc {
+  list-style-type: disc !important;
+}
+
+.tw-flex-row {
+  flex-direction: row !important;
+}
+
+.tw-flex-col {
+  flex-direction: column !important;
+}
+
+.tw-items-center {
+  align-items: center !important;
+}
+
+.tw-items-stretch {
+  align-items: stretch !important;
+}
+
+.tw-justify-center {
+  justify-content: center !important;
+}
+
+.tw-self-center {
+  align-self: center !important;
+}
+
+.tw-rounded-md {
+  border-radius: 0.375rem !important;
+}
+
+.tw-rounded {
+  border-radius: 0.25rem !important;
+}
+
+.tw-border {
+  border-width: 1px !important;
+}
+
+.tw-border-transparent {
+  border-color: transparent !important;
+}
+
+.tw-border-gray-300 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity)) !important;
+}
+
+.tw-bg-gray-100 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity)) !important;
+}
+
+.tw-bg-white {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.tw-bg-opacity-75 {
+  --tw-bg-opacity: 0.75 !important;
+}
+
+.tw-bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+}
+
+.tw-from-purple-600 {
+  --tw-gradient-from: #9333ea !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(147 51 234 / 0)) !important;
+}
+
+.tw-to-indigo-600 {
+  --tw-gradient-to: #4f46e5 !important;
+}
+
+.tw-p-2 {
+  padding: 0.5rem !important;
+}
+
+.tw-p-1 {
+  padding: 0.25rem !important;
+}
+
+.tw-py-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.tw-px-5 {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.tw-py-6 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.tw-px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.tw-px-6 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.tw-py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.tw-px-3 {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.tw-pl-3 {
+  padding-left: 0.75rem !important;
+}
+
+.tw-pr-2 {
+  padding-right: 0.5rem !important;
+}
+
+.tw-pb-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+.tw-pb-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+.tw-pb-4 {
+  padding-bottom: 1rem !important;
+}
+
+.tw-text-left {
+  text-align: left !important;
+}
+
+.tw-text-center {
+  text-align: center !important;
+}
+
+.tw-text-sm {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.tw-text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+}
+
+.tw-text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+}
+
+.tw-text-xs {
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.tw-text-base {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+.tw-font-medium {
+  font-weight: 500 !important;
+  color: black;
+}
+
+.tw-text-gray-900 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
+}
+
+.tw-text-gray-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(75 85 99 / var(--tw-text-opacity)) !important;
+}
+
+.tw-text-gray-700 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(55 65 81 / var(--tw-text-opacity)) !important;
+}
+
+.tw-text-green-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(34 197 94 / var(--tw-text-opacity)) !important;
+}
+
+.tw-text-gray-800 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(31 41 55 / var(--tw-text-opacity)) !important;
+}
+
+.tw-text-blue-800 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(30 64 175 / var(--tw-text-opacity)) !important;
+}
+
+.tw-text-red-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(220 38 38 / var(--tw-text-opacity)) !important;
+}
+
+.tw-text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.tw-text-red-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(239 68 68 / var(--tw-text-opacity)) !important;
+}
+
+.tw-underline {
+  -webkit-text-decoration-line: underline !important;
+          text-decoration-line: underline !important;
+}
+
+.tw-shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.tw-outline-none {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+}
+
+.tw-transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
+.hover\:tw-bg-gray-100:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity)) !important;
+}
+
+.hover\:tw-from-purple-700:hover {
+  --tw-gradient-from: #7e22ce !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(126 34 206 / 0)) !important;
+}
+
+.hover\:tw-to-indigo-700:hover {
+  --tw-gradient-to: #4338ca !important;
+}
+
+.hover\:tw-text-gray-500:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:tw-text-blue-600:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(37 99 235 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:tw-text-gray-800:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(31 41 55 / var(--tw-text-opacity)) !important;
+}
+
+.focus\:tw-outline-none:focus {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+}
+
+.tw-dark .dark\:tw-border-gray-700 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity)) !important;
+}
+
+.tw-dark .dark\:tw-bg-gray-700 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity)) !important;
+}
+
+.tw-dark .dark\:tw-bg-gray-800 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity)) !important;
+}
+
+.tw-dark .dark\:tw-text-gray-200 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(229 231 235 / var(--tw-text-opacity)) !important;
+}
+
+.tw-dark .dark\:tw-text-gray-300 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(209 213 219 / var(--tw-text-opacity)) !important;
+}
+
+.tw-dark .dark\:tw-text-gray-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(156 163 175 / var(--tw-text-opacity)) !important;
+}
+
+.tw-dark .dark\:tw-text-blue-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(96 165 250 / var(--tw-text-opacity)) !important;
+}
+
+.tw-dark .dark\:hover\:tw-bg-gray-700:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity)) !important;
+}
+
+.tw-dark .dark\:hover\:tw-text-gray-300:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(209 213 219 / var(--tw-text-opacity)) !important;
+}
+
+@media (min-width: 768px) {
+  .md\:tw-mr-5 {
+    margin-right: 1.25rem !important;
+  }
+
+  .md\:tw-mr-12 {
+    margin-right: 3rem !important;
+  }
+
+  .md\:tw-w-96 {
+    width: 24rem !important;
+  }
+}
